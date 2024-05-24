@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title> Quadrado </title>
+  <style type="text/css">
+    div {
+      width: 100px;
+      height: 100px;
+      background: red;
+      position: relative;
+      animation: mymove 5s infinite;
+      -moz-animation: mymove 5s infinite;
+      /*Firefox*/
+      -webkit-animation: mymove 5s infinite;
+      /*Safari and Chrome*/
+    }
+
+    @keyframes mymove {
+      from {
+        left: 0px;
+      }
+
+      to {
+        left: 200px;
+      }
+    }
+
+    @-moz-keyframes mymove
+
+    /*Firefox*/
+      {
+      from {
+        left: 0px;
+      }
+
+      to {
+        left: 200px;
+      }
+    }
+
+    @-webkit-keyframes mymove
+
+    /*Safari and Chrome*/
+      {
+      from {
+        left: 0px;
+      }
+
+      to {
+        left: 200px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <p>
+    <b> Nota: </b>
+    Este exemplo não funciona com o Internet Explorer (IE) e Opera.
+  </p>
+  <div> </div>
+</body>
+
+</html>

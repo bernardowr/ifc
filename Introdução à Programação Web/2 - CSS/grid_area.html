@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> Grid Layout - Area naming </title>
+  <style>
+    body {
+      padding: 10px;
+    }
+
+    .container-box {
+      width: 100%;
+      max-width: 700px;
+      margin: 0 auto;
+      display: grid;
+      grid-gap: 10px;
+      grid-template-columns: auto;
+      grid-template-rows: 50px 330px 50px;
+      grid-template-areas:
+        'header header header'
+        'aside main main'
+        'footer footer footer'
+      ;
+    }
+
+    .box {
+      background-color: #9009A0;
+      color: #ffffff;
+    }
+
+    header {
+      grid-area: header;
+    }
+
+    aside {
+      grid-area: aside;
+    }
+
+    main {
+      grid-area: main;
+    }
+
+    footer {
+      grid-area: footer;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container-box">
+    <header class="box"> TESTE 1 </header>
+    <aside class="box"> TESTE 2 </aside>
+    <main class="box">TESTE 3 </main>
+    <footer class="box">TESTE 4 </footer>
+  </div>
+</body>
+
+</html>

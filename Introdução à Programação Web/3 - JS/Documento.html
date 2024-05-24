@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Exercicio JavaScript - TSI22 / 2022 </title>
+  <script type="text/javascript">
+    function subtracao() {
+      valor2 = document.getElementById("valor2").value;
+      valor1 = document.getElementById("valor1").value;
+      soma = parseInt(valor1) - parseInt(valor2);
+      //soma = valor1-valor2;
+      if (soma == 0) {
+        alert('A subtração de ' + valor1 + ' - ' + valor2 + ' foi: 0');
+      } else {
+        if (soma) {
+          if (valor1 > valor2) {
+            alert('A subtração de ' + valor1 + ' - ' + valor2 + ' foi: ' + soma +
+              '. O primeiro valor é maior que o segundo.');
+          } else {
+            alert('A subtração de ' + valor1 + ' - ' + valor2 + ' foi: ' + soma +
+              '. O primeiro valor é menor que o segundo.');
+          }
+        } else {
+          alert('Valores Invalidos, insira novamente.')
+        }
+      }
+    }
+
+    function divisao() {
+      valor2 = document.getElementById("valor2").value;
+      valor1 = document.getElementById("valor1").value;
+      soma = parseInt(valor1) / parseInt(valor2);
+      if (soma) {
+        alert(soma);
+      } else {
+        alert('Valores Invalidos, insira novamente.')
+      }
+    }
+
+    function multiplicacao() {
+      valor2 = document.getElementById("valor2").value;
+      valor1 = document.getElementById("valor1").value;
+      soma = parseInt(valor1) * parseInt(valor2);
+      if (soma) {
+        alert(soma);
+      } else {
+        alert('Valores Invalidos, insira novamente.')
+      }
+    }
+
+    function adicao() {
+      valor2 = document.getElementById("valor2").value;
+      valor1 = document.getElementById("valor1").value;
+      soma = parseInt(valor1) + parseInt(valor2);
+      if (soma) {
+        alert('A soma de ' + valor1 + ' + ' + valor2 + ' foi: ' + soma);
+      } else {
+        alert('Valores Invalidos, insira novamente.')
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <div class='well' style='text-align:center;margin-left:auto; margin-right:auto; width:200px; margin-top:30px'>
+    <h5>Calcular Valores</h5>
+    <input class="input-small" type="text" id="valor1" placeholder='Primeiro'>
+    <br>
+    <input class="input-small" type="text" id="valor2" placeholder='Segundo'>
+    <br>
+    <input type="button" value="-" class='btn btn-info' onclick="subtracao()">
+    <input type="button" value="/" class='btn btn-info' onclick="divisao()">
+    <input type="button" value="*" class='btn btn-info' onclick="multiplicacao()">
+    <input type="button" value="+" class='btn btn-info' onclick="adicao()">
+  </div>
+</body>
+
+</html>

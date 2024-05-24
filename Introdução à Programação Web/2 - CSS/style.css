@@ -1,0 +1,138 @@
+/* IFC - Tecnologia em Sistemas para Internet */
+/* CSS - Documento - Quando for classe utilizar - .nomeClasse */
+/* CSS - Documento - id utilizar - #nome */
+#conteudo{
+  /*background:black;*/
+  background:#ccc;
+  width: 850px;
+  height: 1130px;
+  margin:auto;
+  }
+  #topo{
+  width: 850px;
+  height: 200px;
+  /*background:#09C;*/
+  background:url(css3.jpg);
+  background-size: 118px;
+  }
+  img {
+    height: 200px;
+    object-fit: cover;
+    width: 200px;
+}
+  #procura{
+  margin-left:675px;
+  padding-top:15px;
+  }
+  #idioma{
+  margin-left:700px;
+  padding-top:90px;
+  color:#FFF;
+  }
+  #idioma a {
+  color:#FFF;
+  }
+  #idioma a:hover {
+  color:#09F;
+  }
+  #menu{
+  width: 850px;
+  height: 50px;
+  background:#666;
+  /*margin-top: 10px;*/
+  /*padding-left: 10px;*/
+  }
+  #fotop{
+  width: 630px;
+  height: 180px;
+  background:#999;
+  /*margin-top: 10px;*/
+  /*padding-left: 10px;*/
+  float: left;
+  margin-top:20px;
+  margin-left:10px;
+  }
+  #contrel{
+  width: 180px;
+  height: 260px;
+  background:#999;
+  float: right;
+  margin-top:20px;
+  margin-left:20px;
+margin-right:10px;
+}
+#descl{
+width: 630px;
+height: 70px;
+background:#999;
+float: left;
+margin-top:10px;
+margin-left:10px;
+}
+#caixa{
+/*background:#6C0;*/
+width:850px;
+height:250px;
+float:left;
+margin-top:30px;
+}
+#caixa2{
+/*background:#6C0;*/
+width:850px;
+height:250px;
+float:left;
+margin-top:10px;
+}
+.not1{
+background:#999;
+width:305px;
+height:170px;
+float:left;
+margin-left:10px;
+margin-right:10px;
+}
+.not2{
+background:#999;
+width:305px;
+height:170px;
+float:left;
+/*margin-left:10px;*/
+margin-right:10px;
+}
+.dnot1{
+background:#999;
+width:305px;
+height:70px;
+float:left;
+margin-left:10px;
+margin-top:10px;
+margin-right:10px;
+}
+.dnot2{
+background:#999;
+width:305px;
+height:70px;
+float:left;
+/*margin-left:10px;*/
+margin-top:10px;
+}
+.redes{
+  background:#999;
+  width:180px;
+  height:250px;
+  float:right;
+  margin-right:10px;
+  }
+  #rodape{
+  background:#666;
+  width:850px;
+  height:50px;
+  text-align:center;
+  float:left;
+  margin-top:10px;
+  padding-top:15px;
+  color:#CDC;
+  }
+  
+
+  

@@ -1,0 +1,209 @@
+<!DOCTYPE html!>
+<html lang="pt-br">
+<!---->
+
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício 24</title>
+    <style>
+        #header {
+            text-align: center;
+            /*incluída para centralizar o texto*/
+            border-radius: 10px;
+            background: #c8a2c8;
+            height: 50px;
+            margin: 6px;
+            /*incluído para dar espaço entre as seções*/
+        }
+
+        .container {
+            text-align: center;
+            display: flex;
+            border-radius: 10px;
+
+        }
+
+        /* apaguei toda esta estilização de classe.
+        Você declarou o o cabeçalho com o id header,
+        então isso não estava fazendo nada.
+
+        .cabecalho {
+             apaguei um <h1> aqui que estava no local errado
+            text-align: center;
+            font-size: medium;
+        }
+*/
+        #aside {
+            border-radius: 10px;
+            background: #d1b1d1;
+            height: 500px;
+            width: 33.33%;
+            /*incluído width para ocupar 33.33% do espaço do container */
+            margin: 6px;
+            /*incluído para dar espaço entre as seções*/
+
+        }
+
+        .conteudorelacionado {
+            /* apaguei um <h2> aqui que estava no local errado */
+            text-align: center;
+            font-size: medium;
+            margin: 6px;
+            /*incluído para dar espaço entre as seções*/
+
+        }
+
+        #section {
+            border-radius: 10px;
+            background: center #dbc0da;
+            height: 500px;
+            /*aumentei um pouco para ficar mais parecido com o desenho*/
+            width: 33.33%;
+            /*incluído width para ocupar 33.33% do espaço do container */
+            margin: 6px;
+            /*incluído para dar espaço entre as seções*/
+
+        }
+
+        .conteudosection {
+            /* apaguei um <h3> aqui que estava no local errado */
+            text-align: center;
+            font-size: medium;
+        }
+
+        #headerartigo {
+            border-radius: 10px;
+            background: #e4d0e3;
+            height: 50px;
+            margin: 6px;
+            /*incluído para dar espaço entre as seções*/
+
+        }
+
+        .cabecalhoartigo {
+            /* apaguei um <h4> aqui que estava no local errado */
+            text-align: center;
+            font-size: small;
+            height: 10%;
+            /*alterei a altura para ficar mais parecido */
+            margin: 6px;
+            /*incluído para dar espaço entre as seções*/
+
+        }
+
+        #article {
+            border-radius: 10px;
+            background: #eddfec;
+            height: 45%;
+            /*alterei a altura para ficar mais parecido */
+            margin: 6px;
+            /*incluído para dar espaço entre as seções*/
+
+        }
+
+        .contarticle {
+            /* apaguei um <h4> aqui que estava no local errado */
+            text-align: center;
+            font-size: small;
+        }
+
+        #footerartigo {
+            border-radius: 10px;
+            background: #f6eff6;
+            height: 10%;
+            /*alterei a altura para ficar mais parecido */
+            margin: 6px;
+            /*incluído para dar espaço entre as seções*/
+
+        }
+
+        .controdape> {
+            /* apaguei um <h4> aqui que estava no local errado */
+            text-align: center;
+            font-size: smaller;
+        }
+
+        #nav {
+            border-radius: 10px;
+            background: #d1b1d1;
+            height: 500px;
+            width: 33.33%;
+            /*incluído width para ocupar 33.33% do espaço do container */
+            margin: 6px;
+            /*incluído para dar espaço entre as seções*/
+
+        }
+
+        .navegacao {
+            /* apaguei um <h5> aqui que estava no local errado */
+            text-align: center;
+            font-size: medium;
+        }
+
+        #footerpag {
+            border-radius: 10px;
+            background: #f6eff6;
+            height: 50px;
+            margin: 6px;
+            /*incluído para dar espaço entre as seções*/
+
+        }
+
+        .rodape {
+
+            text-align: center;
+            font-size: small;
+            margin: 6px;
+            /*incluído para dar espaço entre as seções*/
+
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header">
+        <h3>&lt;header&gt;<br>
+            <span>Cabeçalho da Página</span></h3>
+        <!--alterei para h3 para ficar mais parecido-->
+    </header>
+    <div class="container">
+        <aside id="aside">
+            <h2>&lt;aside&gt;<br>
+                <span>Conteúdo Relacionado</span></h2>
+        </aside>
+
+        <section id="section">
+            <h3>&lt;section&gt;<br>
+                <span>Conteúdo</span></h3>
+            <article id="headerartigo">
+                <h5>&lt;article&gt;<br>
+                    <span>Cabeçalho do &lt;header&gt</span></h5>
+            </article>
+
+            <article id="article">
+                <h5>&lt;article&gt;</h5>
+            </article>
+
+            <footer id="footerartigo">
+                <h5>&lt;footer&gt;<br>
+                    <span>Rodapé do &lt;article&gt;</span></h5>
+            </footer>
+            <!--Toda esta parte do <section> até o <footer> do
+                 article eu passei para dentro da seção <secton>, para 
+                 que fiquem um dentro do outro-->
+        </section>
+
+
+
+        <nav id="nav">
+            <h4>&lt;nav&gt;<br>
+                <span>Navegação</span></h4>
+        </nav>
+    </div>
+    <footer id="footerpag">
+        <h6 class="rodape">&lt;footer&gt;<br>
+            <span>Rodapé da Página</span></h6>
+    </footer>
+</body>
+
+</html>
