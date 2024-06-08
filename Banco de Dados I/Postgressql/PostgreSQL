@@ -1,6 +1,12 @@
 createdb -U postgres 03_reserva_passagens
 psql -U postgres 03_reserva_passagens
-
+CREATE DOMAIN d_nomeProprio         VARCHAR(40);
+CREATE DOMAIN d_nomeLocalidades     VARCHAR(30);
+CREATE DOMAIN d_cep                 VARCHAR(8);
+CREATE DOMAIN d_telefone            VARCHAR(8);
+CREATE DOMAIN d_moeda               DECIMAL(15,2);
+CREATE DOMAIN d_quantidade          DECIMAL(15,2);
+CREATE DOMAIN d_data                DATE;
 
 
 

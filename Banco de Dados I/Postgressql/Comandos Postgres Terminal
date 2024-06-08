@@ -19,7 +19,8 @@ COMANDOS DO TERMINAL DO SGBD (psql)
 \l - Lista os bancos de dados existentes nesta instância. 
 \dt - Mostra todas as tableas (relações)
 
-
+Criar Domínios - Padrões de Tipos de dados
+CREATE DOMAIN d_nomeatributo TIPOATRIBUTO (N);
 
 ======================================================
 COMANDOS DO SQL
