@@ -8,20 +8,3 @@ CREATE DOMAIN d_moeda               DECIMAL(15,2);
 CREATE DOMAIN d_quantidade          DECIMAL(15,2);
 CREATE DOMAIN d_data                DATE;
 CREATE DOMAIN d_endereco            VARCHAR(80);
-
-
-
-createdb -U postgres 08_locadora_fitas
-
-
-
-createdb -U postgres 10_clinica_medica
-
-
-
-createdb -U postgres 12_clube_danca
-
-
-
-
-createdb -U postgres 16_universidade
