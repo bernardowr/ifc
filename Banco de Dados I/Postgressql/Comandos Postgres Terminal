@@ -18,6 +18,7 @@ COMANDOS DO TERMINAL DO SGBD (psql)
 \h - Mostra a lista de comendos do SQL.
 \l - Lista os bancos de dados existentes nesta instância. 
 \dt - Mostra todas as tableas (relações)
+\ds - Mostra o esquema da Tabela.
 
 - Comentário - (2 hífens) -- 
 - Criar Domínios - Padrões de Tipos de dados

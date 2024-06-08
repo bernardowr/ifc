@@ -7,6 +7,7 @@ CREATE DOMAIN d_telefone            VARCHAR(8);
 CREATE DOMAIN d_moeda               DECIMAL(15,2);
 CREATE DOMAIN d_quantidade          DECIMAL(15,2);
 CREATE DOMAIN d_data                DATE;
+CREATE DOMAIN d_endereco            VARCHAR(80);
 
 
 
