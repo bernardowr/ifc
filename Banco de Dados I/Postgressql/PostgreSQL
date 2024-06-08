@@ -1,0 +1,20 @@
+createdb -U postgres 03_reserva_passagens
+psql -U postgres 03_reserva_passagens
+
+
+
+
+createdb -U postgres 08_locadora_fitas
+
+
+
+createdb -U postgres 10_clinica_medica
+
+
+
+createdb -U postgres 12_clube_danca
+
+
+
+
+createdb -U postgres 16_universidade

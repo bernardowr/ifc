@@ -1,0 +1,28 @@
+======================================================
+NO TERMINAL DO SISTEMA OPERACIONAL (POWERSHELL/PROMPT)
+======================================================
+- CRIAR UM BANCO DE DADOS
+CREATE DATABASE nome_banco
+
+- APAGAR UM BANCO DE DADOS
+DROP DATABASE nome_banco
+
+- ENTRAR NO BANCO DE DADOS
+PSQL -U nome_banco
+
+======================================================
+COMANDOS DO TERMINAL DO SGBD (psql)
+======================================================
+\c nome_banco - Para entrar em um BD existente.
+\? - Mostra todos os comandos do terminal.
+\h - Mostra a lista de comendos do SQL.
+\l - Lista os bancos de dados existentes nesta instância. 
+\dt - Mostra todas as tableas (relações)
+
+
+
+======================================================
+COMANDOS DO SQL
+======================================================
+- CRIAR UM BANCO DE DADOS
+CREATE DATABASE nome_banco;
