@@ -128,16 +128,49 @@ CREATE TABLE confirma (
     FOREIGN KEY (idBilhete) REFERENCES bilhete(idBilhete) 
 );
 
-CREATE TABLE selecao (
+CREATE TABLE selecaoVoo (
    idVoos integer NOT NULL,
    siglaOrigem  d_sigla NOT NULL,
    siglaDestino d_sigla NOT NULL,
    idTrecho integer NOT NULL,
-   idReserva integer NOT NULL
-   PRIMARY KEY(idVoos, siglaOrigem, siglaDestino, idTrecho, idReserva),
+   idReserva integer NOT NULL,
+   PRIMARY KEY (idVoos, siglaOrigem, siglaDestino, idTrecho, idReserva),
    FOREIGN KEY (idVoos) REFERENCES voos(idVoos),
    FOREIGN KEY (siglaOrigem) REFERENCES origem(siglaOrigem),
    FOREIGN KEY (siglaDestino) REFERENCES destino(siglaDestino),
    FOREIGN KEY (idTrecho) REFERENCES trecho(idTrecho),
    FOREIGN KEY (idReserva) REFERENCES reserva(idReserva)
+);
+
+CREATE TABLE checkin (
+    idBilhete integer NOT NULL, 
+    fileira VARCHAR(5) NOT NULL,
+    codigoAlfabetico d_letra NOT NULL,
+    dataCheckin d_data NOT NULL, 
+    horaCheckin d_hora NOT NULL,
+    PRIMARY KEY (idBilhete, fileira, codigoAlfabetico),
+    FOREIGN KEY (idBilhete) REFERENCES bilhete(idBilhete), 
+    FOREIGN KEY (fileira, codigoAlfabetico) REFERENCES assento(fileira,codigoAlfabetico)
+);
+
+CREATE TABLE selecaoAeroporto (
+    idAeroporto SERIAL NOT NULL,
+    nomeAeroporto d_nomeProprio NOT NULL, 
+    idCidade integer NOT NULL, 
+    idTrecho integer NOT NULL,
+    siglaOrigem d_sigla NOT NULL, 
+    siglaDestino d_sigla NOT NULL, 
+    PRIMARY KEY (idAeroporto, idCidade, idTrecho, siglaOrigem, siglaDestino),
+    FOREIGN KEY (idCidade) REFERENCES cidades(idCidade),
+    FOREIGN KEY (idTrecho) REFERENCES trecho(idTrecho),
+    FOREIGN KEY (siglaOrigem) REFERENCES origem(siglaOrigem),
+    FOREIGN KEY (siglaDestino) REFERENCES destino(siglaDestino)
+);
+
+CREATE TABLE alocacao (
+    idAeronave integer NOT NULL, 
+    idTrecho integer NOT NULL, 
+    PRIMARY KEY (idAeronave, idTrecho),
+    FOREIGN kEY (idAeronave) REFERENCES aeronave(idAeronave),
+    FOREIGN KEY (idTrecho) REFERENCES trecho(idTrecho)
 );
