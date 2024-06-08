@@ -19,11 +19,23 @@ COMANDOS DO TERMINAL DO SGBD (psql)
 \l - Lista os bancos de dados existentes nesta instância. 
 \dt - Mostra todas as tableas (relações)
 
-Criar Domínios - Padrões de Tipos de dados
-CREATE DOMAIN d_nomeatributo TIPOATRIBUTO (N);
+- Comentário - (2 hífens) -- 
+- Criar Domínios - Padrões de Tipos de dados
+- CREATE DOMAIN d_nomeatributo TIPOATRIBUTO (N);
+
+- Criar Tabelas
+CREATE TABLE nomeTabela (
+        nomeAtributo    TIPO_DADO,
+);
+
+1º - Tableas Primárias - Que possuem apenas chaves primárias. 
+2º - Tabelas Secundárias - Possuem chave estrangeira também. 
+3º - Tabelas de Relacionamento - Tabelas geradas a partir de um relacionamento n:n.
 
 ======================================================
 COMANDOS DO SQL
 ======================================================
 - CRIAR UM BANCO DE DADOS
 CREATE DATABASE nome_banco;
+
+
